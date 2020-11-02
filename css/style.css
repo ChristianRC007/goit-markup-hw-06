@@ -502,6 +502,7 @@ img {
 }
 
 .adress-box {
+  max-width: 231px;
   margin-right: 70px;
 }
 
@@ -534,6 +535,7 @@ img {
 .social-box {
   display: flex;
   flex-direction: column;
+  margin-right: 93px;
 }
 
 .social-box-title {
@@ -556,6 +558,68 @@ img {
 .social-box .social-link:hover,
 .social-box .social-link:focus {
   background-color: var(--accent-color);
+}
+
+.subscribe-form {
+  display: flex;
+}
+
+.subscribe-title {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+
+  color: var(--main-white-color);
+}
+
+.subscribe-input {
+  display: block;
+  width: 358px;
+  height: 50px;
+  padding: 15px 16px;
+  margin-right: 12px;
+
+  font-size: 16px;
+  line-height: 1.25;
+  color: rgba(255, 255, 255, 0.6);
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}
+
+.subscribe-btn {
+  display: flex;
+  align-items: center;
+  padding: 10px 29px;
+  width: 200px;
+  height: 50px;
+
+  background: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: 1px solid transparent;
+  border-radius: 4px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: var(--main-white-color);
+
+  transition: background-color 250ms var(--timing-function),
+    color 250ms var(--timing-function);
+}
+
+.subscribe-btn > .icon {
+  margin-left: 10px;
+}
+
+.subscribe-btn:hover {
+  background-color: var(--main-white-color);
+  color: var(--standart-black);
 }
 
 /* Backdrop + Modal */
